@@ -1,15 +1,15 @@
 package com.judell.springmongo.resp;
 
-import com.judell.springmongo.model.Users;
+import com.judell.springmongo.model.User;
 
 public class UserResp {
-    private Integer id;
+    public String id;
     public String firstName;
     public String lastName;
 
-    public UserResp(Users users) {
-        this.id = users.getId();
-        this.firstName = users.getFirstName();
-        this.lastName = users.getLastName();
+    public UserResp(User user) {
+        this.id = user.getId();
+        this.firstName = user.getFirstName();
+        this.lastName = user.getLastName();
     }
 }

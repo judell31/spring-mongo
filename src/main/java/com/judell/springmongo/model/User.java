@@ -3,19 +3,19 @@ package com.judell.springmongo.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collation = "users")
-public class Users {
+@Document(collection = "users")
+public class User {
 
     @Id
-    private Integer id;
+    private String id;
     private String firstName;
     private String lastName;
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
