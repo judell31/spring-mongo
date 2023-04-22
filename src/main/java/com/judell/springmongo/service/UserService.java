@@ -33,7 +33,7 @@ public class UserService {
         user.setFirstName(addUserReq.firstName);
         user.setLastName(addUserReq.lastName);
 
-        userDao.save(user);
+        userDao.insert(user);
 
         return new UserResp(user);
     }
